@@ -1,0 +1,1322 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V5.3.2.26                                          #
+#                                                                              #
+#           Link time     =  02/Mar/2017  04:52:52                             #
+#           Target CPU    =  MSP430                                            #
+#           List file     =  "C:\Users\server\Desktop\new\Wireless Update\868M #
+#                            Hz Flash Based Updater\List\flash_based_rfbsl_ism #
+#                            _eu.map"                                          #
+#           Output file 1 =  "C:\Users\server\Desktop\new\Wireless Update\868M #
+#                            Hz Flash Based Updater\Exe\flash_based_rfbsl_ism_ #
+#                            eu.txt"                                           #
+#                            Format: msp430_txt                                #
+#           Output file 2 =  "C:\Users\server\Desktop\new\Wireless Update\868M #
+#                            Hz Flash Based Updater\Exe\flash_based_rfbsl_ism_ #
+#                            eu.d43"                                           #
+#                            Format: debug                                     #
+#                            UBROF version 10.0.6                              #
+#                            Using library modules for C-SPY (-rt)             #
+#           Command line  =  "C:\Users\server\Desktop\new\Wireless Update\868M #
+#                            Hz Flash Based Updater\Obj\RFBSL_Low_Level_Init.r #
+#                            43"                                               #
+#                            "C:\Users\server\Desktop\new\Wireless Update\868M #
+#                            Hz Flash Based Updater\Obj\display.r43"           #
+#                            "C:\Users\server\Desktop\new\Wireless Update\868M #
+#                            Hz Flash Based Updater\Obj\display1.r43"          #
+#                            "C:\Users\server\Desktop\new\Wireless Update\868M #
+#                            Hz Flash Based Updater\Obj\radio.r43"             #
+#                            "C:\Users\server\Desktop\new\Wireless Update\868M #
+#                            Hz Flash Based Updater\Obj\rf1a.r43"              #
+#                            "C:\Users\server\Desktop\new\Wireless Update\868M #
+#                            Hz Flash Based Updater\Obj\wbsl.r43"              #
+#                            -o                                                #
+#                            "C:\Users\server\Desktop\new\Wireless Update\868M #
+#                            Hz Flash Based Updater\Exe\flash_based_rfbsl_ism_ #
+#                            eu.d43"                                           #
+#                            -l                                                #
+#                            "C:\Users\server\Desktop\new\Wireless Update\868M #
+#                            Hz Flash Based Updater\List\flash_based_rfbsl_ism #
+#                            _eu.map"                                          #
+#                            -xmsn                                             #
+#                            "-IC:\Program Files (x86)\IAR Systems\Embedded Wo #
+#                            rkbench 6.4 Evaluation\430\LIB\"                  #
+#                            -f                                                #
+#                            "C:\Users\server\Desktop\new\Wireless Update\flas #
+#                            h_based_lnkcc430F6137.xcl"                        #
+#                            (-cmsp430                                         #
+#                            -Z(DATA)DATA16_I,DATA16_Z,DATA16_N,DATA16_HEAP+_D #
+#                            ATA16_HEAP_SIZE=1C00-2B79                         #
+#                            -Z(DATA)CSTACK+_STACK_SIZE#                       #
+#                            -Z(DATA)RAM_INTERRUPT_VECTOR=2B80-2BFF            #
+#                            -Z(CODE)INFO=1800-19FF -Z(CODE)INFOA=1980-19FF    #
+#                            -Z(CODE)INFOB=1900-197F -Z(CODE)INFOC=1880-18FF   #
+#                            -Z(CODE)INFOD=1800-187F -Z(CODE)ZAREA=1000-1005   #
+#                            -Z(CODE)ZAREA_CODE=1006-102F                      #
+#                            -Z(CODE)BSL0=1006-11FF -Z(CODE)BSL1=1200-13FF     #
+#                            -Z(CODE)BSL2=1400-15FF -Z(CODE)BSL3=1600-17EF     #
+#                            -Z(CODE)CSTART,ISR_CODE=1020-17EF                 #
+#                            -Z(CONST)DATA16_C,DATA16_ID,DIFUNCT,CHECKSUM=1020 #
+#                            -17EF                                             #
+#                            -P(CODE)CODE=1006-17EF -Z(CODE)INTVEC=FF80-FFFF   #
+#                            -Z(CODE)RESET=FFD8-FFD9                           #
+#                            -Z(CONST)BSLSIG=0x17F0-17FB                       #
+#                            -Z(CONST)JTAGLOCK_KEY=0x17FC-17FF)                #
+#                            -D_STACK_SIZE=100 -rt                             #
+#                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 6.4 Evaluation\430\LIB\DLIB\dl430xsfn.r43"  #
+#                            -e_PrintfLarge=_Printf -e_ScanfLarge=_Scanf       #
+#                            -D_DATA16_HEAP_SIZE=0                             #
+#                            "-Omsp430_txt=C:\Users\server\Desktop\new\Wireles #
+#                            s Update\868MHz Flash Based Updater\Exe\flash_bas #
+#                            ed_rfbsl_ism_eu.txt"                              #
+#                            -s __program_start -D_DATA20_HEAP_SIZE=50         #
+#                                                                              #
+#                           Copyright (C) 1987-2012 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at :           102A  Relocatable, from module : ?cstart
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __Heap_Handler             = Basic
+  __SystemLibrary            = DLib
+  __core                     = 430X
+  __data_model               = small
+  __dlib_file_descriptor     = 0
+  __dlib_full_locale_support = 0
+  __double_size              = 32
+  __pic                      = no
+  __reg_r4                   = free
+  __reg_r5                   = free
+  __rt_version               = 3
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                  There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _DATA20_HEAP_SIZE       0050 
+           _DATA16_HEAP_SIZE       0000 
+           _STACK_SIZE             0100 
+    *************************************************************************
+
+  FILE NAME : C:\Users\server\Desktop\new\Wireless Update\868MHz Flash Based Updater\Obj\RFBSL_Low_Level_Init.r43
+  PROGRAM MODULE, NAME : RFBSL_Low_Level_Init
+
+  SEGMENTS IN THE MODULE
+  ======================
+ZAREA
+  Common segment, address: 1000 - 1005 (0x6 bytes), align: 1
+  Segment part 0. ROOT.       Intra module refs:   BslProtectVecLoc
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           BSL_Entry_JMP           1000 
+    -------------------------------------------------------------------------
+ZAREA_CODE
+  Relative segment, address: 1006 - 1029 (0x24 bytes), align: 1
+  Segment part 1. ROOT.       Intra module refs:   BSL_Entry_JMP
+                                                   BslProtectVecLoc
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __port2_isr             1006 
+           isr_return              1012 
+           BSL_Protect             1018 
+           BCC2BSL                 1028 
+    -------------------------------------------------------------------------
+BSLSIG
+  Common segment, address: 17F0 - 17FB (0xc bytes), align: 1
+  Segment part 2. ROOT.
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           BslProtectVecLoc        17F2 
+           PBSLSigLoc              17F4 
+           SBSLSigLoc              17F6 
+           BslEntryLoc             17FA 
+    -------------------------------------------------------------------------
+JTAGLOCK_KEY
+  Common segment, address: 17FC - 17FF (0x4 bytes), align: 1
+  Segment part 3. ROOT.
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PJTAGLOCK_KEY           17FC 
+           SJTAGLOCK_KEY           17FE 
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\server\Desktop\new\Wireless Update\868MHz Flash Based Updater\Obj\display.r43
+    *************************************************************************
+
+  FILE NAME : C:\Users\server\Desktop\new\Wireless Update\868MHz Flash Based Updater\Obj\display1.r43
+    *************************************************************************
+
+  FILE NAME : C:\Users\server\Desktop\new\Wireless Update\868MHz Flash Based Updater\Obj\radio.r43
+  PROGRAM MODULE, NAME : radio
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0F06 - 0F07 (0x2 bytes), align: 0
+  Segment part 1. ROOT.       Intra module refs:   radio_reset
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_RF1AIFERR_L          0F06 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RF1AIFERR               0F06 
+           RF1AIFERR_H             0F07 
+           RF1AIFERR_L             0F06 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0F32 - 0F33 (0x2 bytes), align: 0
+  Segment part 2. ROOT.       Intra module refs:   RadioIsr_wbsl (wbsl)
+                                                   ReceiveOff
+                                                   ReceiveOn
+                                                   radio_reset
+                                                   reset_wbsl (wbsl)
+                                                   transmitPacket (wbsl)
+                                                   wbsl_link (wbsl)
+                                                   wbsl_receivePackets (wbsl)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_RF1AIFG_L            0F32 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RF1AIFG                 0F32 
+           RF1AIFG_H               0F33 
+           RF1AIFG_L               0F32 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: 1052 - 10AB (0x5a bytes), align: 0
+  Segment part 4.             Intra module refs:   config_radio_wbsl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RF1A_REG_SMARTRF_SETTING
+                                   1052 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1536 - 1565 (0x30 bytes), align: 1
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           radio_reset             1536            start_wbsl (wbsl)
+               calls direct
+               CSTACK = 00000000 ( 00000006 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1776 - 1785 (0x10 bytes), align: 1
+  Segment part 10.            Intra module refs:   ReceiveOff
+                                                   radio_reset
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine0            1776 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 161C - 1641 (0x26 bytes), align: 1
+  Segment part 7.             Intra module refs:   config_radio_wbsl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           WriteSmartRFReg         161C 
+               calls direct
+               CSTACK = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 172C - 173F (0x14 bytes), align: 1
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           config_radio_wbsl       172C            start_wbsl (wbsl)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1796 - 17A5 (0x10 bytes), align: 1
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ReceiveOn               1796            ?Subroutine0 (wbsl)
+                                                   RadioIsr_wbsl (wbsl)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1702 - 1717 (0x16 bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ReceiveOff              1702            ?Subroutine0 (wbsl)
+                                                   RadioIsr_wbsl (wbsl)
+                                                   transmitPacket (wbsl)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\server\Desktop\new\Wireless Update\868MHz Flash Based Updater\Obj\rf1a.r43
+  PROGRAM MODULE, NAME : rf1a
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0F02 - 0F03 (0x2 bytes), align: 0
+  Segment part 1. ROOT.       Intra module refs:   ReadSingleReg
+                                                   Strobe
+                                                   WriteBurstReg
+                                                   WritePATable
+                                                   WriteSingleReg
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_RF1AIFCTL1_L         0F02 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RF1AIFCTL1              0F02 
+           RF1AIFCTL1_H            0F03 
+           RF1AIFCTL1_L            0F02 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0F10 - 0F11 (0x2 bytes), align: 0
+  Segment part 2. ROOT.       Intra module refs:   Strobe
+                                                   WriteBurstReg
+                                                   WritePATable
+                                                   WriteSingleReg
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_RF1AINSTRW_L         0F10 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RF1AINSTRW              0F10 
+           RF1AINSTRW_H            0F11 
+           RF1AINSTRW_L            0F10 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0F12 - 0F13 (0x2 bytes), align: 0
+  Segment part 3. ROOT.       Intra module refs:   ReadSingleReg
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_RF1AINSTR1W_L        0F12 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RF1AINSTR1W             0F12 
+           RF1AINSTR1W_H           0F13 
+           RF1AINSTR1W_L           0F12 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0F20 - 0F21 (0x2 bytes), align: 0
+  Segment part 4. ROOT.       Intra module refs:   ReadSingleReg
+                                                   Strobe
+                                                   WriteBurstReg
+                                                   WritePATable
+                                                   WriteSingleReg
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_RF1ASTAT0W_L         0F20 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RF1ASTAT0W              0F20 
+           RF1ASTAT0W_H            0F21 
+           RF1ASTAT0W_L            0F20 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0F30 - 0F31 (0x2 bytes), align: 0
+  Segment part 5. ROOT.       Intra module refs:   Strobe
+                                                   transmitPacket (wbsl)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_RF1AIN_L             0F30 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RF1AIN                  0F30 
+           RF1AIN_H                0F31 
+           RF1AIN_L                0F30 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 17D8 - 17E1 (0xa bytes), align: 1
+  Segment part 14.            Intra module refs:   ?Subroutine0
+                                                   ?Subroutine1
+                                                   ReadSingleReg
+                                                   Strobe
+                                                   WritePATable
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine4            17D8 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1196 - 1215 (0x80 bytes), align: 1
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Strobe                  1196            ?Subroutine0 (radio)
+                                                   ReceiveOff (radio)
+                                                   ReceiveOn (radio)
+                                                   radio_reset (radio)
+                                                   transmitPacket (wbsl)
+               calls direct
+               CSTACK = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 15C4 - 15EF (0x2c bytes), align: 1
+  Segment part 13.            Intra module refs:   Strobe
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ReadSingleReg           15C4            ?Subroutine1 (wbsl)
+                                                   ?Subroutine2 (wbsl)
+                                                   RadioIsr_wbsl (wbsl)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 17CE - 17D7 (0xa bytes), align: 1
+  Segment part 10.            Intra module refs:   WriteBurstReg
+                                                   WritePATable
+                                                   WriteSingleReg
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine3            17CE 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1642 - 1663 (0x22 bytes), align: 1
+  Segment part 11.            Intra module refs:   Strobe
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           WriteSingleReg          1642            WriteSmartRFReg (radio)
+               CSTACK = 00000000 ( 00000006 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1718 - 172B (0x14 bytes), align: 1
+  Segment part 12.            Intra module refs:   WriteBurstReg
+                                                   WriteSingleReg
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine0            1718 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1566 - 1595 (0x30 bytes), align: 1
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           WriteBurstReg           1566            transmitPacket (wbsl)
+               CSTACK = 00000000 ( 00000006 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 144C - 1491 (0x46 bytes), align: 1
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           WritePATable            144C            config_radio_wbsl (radio)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 17C2 - 17CD (0xc bytes), align: 1
+  Segment part 8.             Intra module refs:   WritePATable
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine1            17C2 
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\server\Desktop\new\Wireless Update\868MHz Flash Based Updater\Obj\wbsl.r43
+  PROGRAM MODULE, NAME : wbsl
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA16_AN
+  Relative segment, address: 0F34 - 0F35 (0x2 bytes), align: 0
+  Segment part 3. ROOT.       Intra module refs:   start_wbsl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_RF1AIES_L            0F34 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RF1AIES                 0F34 
+           RF1AIES_H               0F35 
+           RF1AIES_L               0F34 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0F38 - 0F39 (0x2 bytes), align: 0
+  Segment part 4. ROOT.       Intra module refs:   RadioIsr_wbsl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_RF1AIV_L             0F38 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           RF1AIV                  0F38 
+           RF1AIV_H                0F39 
+           RF1AIV_L                0F38 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0202 - 0203 (0x2 bytes), align: 0
+  Segment part 5. ROOT.       Intra module refs:   init_watchButtons
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAOUT_L              0202 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAOUT                   0202 
+           PAOUT_H                 0203 
+           PAOUT_L                 0202 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0204 - 0205 (0x2 bytes), align: 0
+  Segment part 6. ROOT.       Intra module refs:   init_watchButtons
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PADIR_L              0204 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PADIR                   0204 
+           PADIR_H                 0205 
+           PADIR_L                 0204 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0206 - 0207 (0x2 bytes), align: 0
+  Segment part 7. ROOT.       Intra module refs:   init_watchButtons
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAREN_L              0206 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAREN                   0206 
+           PAREN_H                 0207 
+           PAREN_L                 0206 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0218 - 0219 (0x2 bytes), align: 0
+  Segment part 8. ROOT.       Intra module refs:   init_watchButtons
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAIES_L              0218 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAIES                   0218 
+           PAIES_H                 0219 
+           PAIES_L                 0218 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 021A - 021B (0x2 bytes), align: 0
+  Segment part 9. ROOT.       Intra module refs:   init_watchButtons
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAIE_L               021A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAIE                    021A 
+           PAIE_H                  021B 
+           PAIE_L                  021A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 021C - 021D (0x2 bytes), align: 0
+  Segment part 10. ROOT.      Intra module refs:   init_watchButtons
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PAIFG_L              021C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PAIFG                   021C 
+           PAIFG_H                 021D 
+           PAIFG_L                 021C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 024A - 024B (0x2 bytes), align: 0
+  Segment part 11. ROOT.      Intra module refs:   init_watch
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PCSEL_L              024A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PCSEL                   024A 
+           PCSEL_H                 024B 
+           PCSEL_L                 024A 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0120 - 0121 (0x2 bytes), align: 0
+  Segment part 12. ROOT.      Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_PMMCTL0_L            0120 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           PMMCTL0                 0120 
+           PMMCTL0_H               0121 
+           PMMCTL0_L               0120 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0102 - 0103 (0x2 bytes), align: 0
+  Segment part 13. ROOT.      Intra module refs:   init_watch
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_SFRIFG1_L            0102 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SFRIFG1                 0102 
+           SFRIFG1_H               0103 
+           SFRIFG1_L               0102 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0180 - 0181 (0x2 bytes), align: 0
+  Segment part 14. ROOT.      Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_SYSCTL_L             0180 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SYSCTL                  0180 
+           SYSCTL_H                0181 
+           SYSCTL_L                0180 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0340 - 0341 (0x2 bytes), align: 0
+  Segment part 15. ROOT.      Intra module refs:   wbsl_resetTimer
+                                                   wbsl_setTimer
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CTL                  0340 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0344 - 0345 (0x2 bytes), align: 0
+  Segment part 16. ROOT.      Intra module refs:   transmitPacket
+                                                   wbsl_link
+                                                   wbsl_receivePackets
+                                                   wbsl_replyAck
+                                                   wbsl_resetTimer
+                                                   wbsl_setTimer
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCTL1                0344 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0350 - 0351 (0x2 bytes), align: 0
+  Segment part 17. ROOT.      Intra module refs:   wbsl_resetTimer
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0R                    0350 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0354 - 0355 (0x2 bytes), align: 0
+  Segment part 18. ROOT.      Intra module refs:   wbsl_setTimer
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TA0CCR1                 0354 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0160 - 0161 (0x2 bytes), align: 0
+  Segment part 19. ROOT.      Intra module refs:   init_watch
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCSCTL0_L            0160 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCSCTL0                 0160 
+           UCSCTL0_H               0161 
+           UCSCTL0_L               0160 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0162 - 0163 (0x2 bytes), align: 0
+  Segment part 20. ROOT.      Intra module refs:   init_watch
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCSCTL1_L            0162 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCSCTL1                 0162 
+           UCSCTL1_H               0163 
+           UCSCTL1_L               0162 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0164 - 0165 (0x2 bytes), align: 0
+  Segment part 21. ROOT.      Intra module refs:   init_watch
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCSCTL2_L            0164 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCSCTL2                 0164 
+           UCSCTL2_H               0165 
+           UCSCTL2_L               0164 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0166 - 0167 (0x2 bytes), align: 0
+  Segment part 22. ROOT.      Intra module refs:   init_watch
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCSCTL3_L            0166 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCSCTL3                 0166 
+           UCSCTL3_H               0167 
+           UCSCTL3_L               0166 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 0168 - 0169 (0x2 bytes), align: 0
+  Segment part 23. ROOT.      Intra module refs:   init_watch
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCSCTL4_L            0168 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCSCTL4                 0168 
+           UCSCTL4_H               0169 
+           UCSCTL4_L               0168 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 016C - 016D (0x2 bytes), align: 0
+  Segment part 24. ROOT.      Intra module refs:   init_watch
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCSCTL6_L            016C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCSCTL6                 016C 
+           UCSCTL6_H               016D 
+           UCSCTL6_L               016C 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 016E - 016F (0x2 bytes), align: 0
+  Segment part 25. ROOT.      Intra module refs:   init_watch
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_UCSCTL7_L            016E 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UCSCTL7                 016E 
+           UCSCTL7_H               016F 
+           UCSCTL7_L               016E 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 015C - 015D (0x2 bytes), align: 0
+  Segment part 26. ROOT.      Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_WDTCTL_L             015C 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           WDTCTL                  015C 
+           WDTCTL_H                015D 
+           WDTCTL_L                015C 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1C0E - 1C15 (0x8 bytes), align: 1
+  Segment part 29.            Intra module refs:   reset_wbsl
+                                                   start_wbsl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sRFwbsl                 1C0E 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1C16 - 1D17 (0x102 bytes), align: 1
+  Segment part 30.            Intra module refs:   RadioIsr_wbsl
+                                                   wbsl_link
+                                                   wbsl_receivePackets
+                                                   wbsl_writePacket
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxBuffer                1C16 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D20 - 1D20 (0x1 bytes), align: 0
+  Segment part 31.            Intra module refs:   RadioIsr_wbsl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RxBufferLength          1D20 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D18 - 1D19 (0x2 bytes), align: 1
+  Segment part 32.            Intra module refs:   wbsl_writePacket
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ptrMemory               1D18 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D1A - 1D1B (0x2 bytes), align: 1
+  Segment part 33.            Intra module refs:   start_wbsl
+                                                   wbsl_writePacket
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           start_ram_bsl_address   1D1A 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 1C00 - 1C07 (0x8 bytes), align: 0
+  Segment part 36.            Intra module refs:   wbsl_link
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           discoveryReply          1C00 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D21 - 1D21 (0x1 bytes), align: 0
+  Segment part 38.            Intra module refs:   start_wbsl
+                                                   wbsl_receivePackets
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wbsl_flag               1D21 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D22 - 1D22 (0x1 bytes), align: 0
+  Segment part 39.            Intra module refs:   RadioIsr_wbsl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wbslMode_flag           1D22            ReceiveOff (radio)
+                                                   ReceiveOn (radio)
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D23 - 1D23 (0x1 bytes), align: 0
+  Segment part 40.            Intra module refs:   ?Subroutine0
+                                                   RadioIsr_wbsl
+                                                   wbsl_link
+                                                   wbsl_receivePackets
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rxtx_flag               1D23 
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 1C08 - 1C0D (0x6 bytes), align: 0
+  Segment part 41.            Intra module refs:   wbsl_replyAck
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ackReply                1C08 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D24 - 1D24 (0x1 bytes), align: 0
+  Segment part 43.            Intra module refs:   reset_wbsl
+                                                   wbsl_receivePackets
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wbsl_progress           1D24 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D25 - 1D25 (0x1 bytes), align: 0
+  Segment part 44.            Intra module refs:   wbsl_link
+                                                   wbsl_receivePackets
+                                                   wbsl_replyAck
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           AP_address              1D25 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D26 - 1D26 (0x1 bytes), align: 0
+  Segment part 45.            Intra module refs:   reset_wbsl
+                                                   wbsl_receivePackets
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wbsl_number_of_retries
+                                   1D26 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D27 - 1D27 (0x1 bytes), align: 0
+  Segment part 46.            Intra module refs:   reset_wbsl
+                                                   start_wbsl
+                                                   wbsl_receivePackets
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           initOk                  1D27 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D1C - 1D1D (0x2 bytes), align: 1
+  Segment part 47.            Intra module refs:   reset_wbsl
+                                                   start_wbsl
+                                                   wbsl_receivePackets
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           totalPackets            1D1C 
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D1E - 1D1F (0x2 bytes), align: 1
+  Segment part 48.            Intra module refs:   reset_wbsl
+                                                   start_wbsl
+                                                   wbsl_receivePackets
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           currentPacket           1D1E 
+    -------------------------------------------------------------------------
+DATA16_AN
+  Relative segment, address: 2BE0 - 2BE1 (0x2 bytes), align: 0
+  Segment part 27. ROOT.      Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           port2_isrAddress        2BE0 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 14D0 - 1503 (0x34 bytes), align: 1
+  Segment part 68.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    14D0            Segment part 22 (?cstart)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 16B8 - 16D1 (0x1a bytes), align: 1
+  Segment part 67.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           init_watchButtons       16B8 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 15F0 - 161B (0x2c bytes), align: 1
+  Segment part 57.            Intra module refs:   wbsl_writePacket
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wbsl_writeBytes         15F0 
+               CSTACK = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1216 - 1295 (0x80 bytes), align: 1
+  Segment part 58.            Intra module refs:   wbsl_receivePackets
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wbsl_writePacket        1216 
+               calls direct
+               CSTACK = 00000000 ( 0000000A )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 138E - 13F7 (0x6a bytes), align: 1
+  Segment part 65.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           start_wbsl              138E 
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1296 - 1313 (0x7e bytes), align: 1
+  Segment part 59.            Intra module refs:   wbsl_link
+                                                   wbsl_replyAck
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           transmitPacket          1296 
+               calls direct
+               CSTACK = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 17B4 - 17C1 (0xe bytes), align: 1
+  Segment part 61.            Intra module refs:   transmitPacket
+                                                   wbsl_replyAck
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine3            17B4 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1492 - 14CF (0x3e bytes), align: 1
+  Segment part 63.            Intra module refs:   start_wbsl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wbsl_link               1492 
+               calls direct
+               CSTACK = 00000000 ( 00000006 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1596 - 15C3 (0x2e bytes), align: 1
+  Segment part 64.            Intra module refs:   wbsl_link
+                                                   wbsl_receivePackets
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine0            1596 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1504 - 1535 (0x32 bytes), align: 1
+  Segment part 60.            Intra module refs:   wbsl_receivePackets
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wbsl_replyAck           1504 
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 10BA - 1195 (0xdc bytes), align: 1
+  Segment part 62.            Intra module refs:   start_wbsl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wbsl_receivePackets     10BA 
+               calls direct
+               CSTACK = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1314 - 138D (0x7a bytes), align: 1
+  Segment part 53.            Intra module refs:   ?Subroutine0
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RadioIsr_wbsl           1314 
+               calls direct
+               CSTACK = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 17A6 - 17B3 (0xe bytes), align: 1
+  Segment part 54.            Intra module refs:   RadioIsr_wbsl
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine2            17A6 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 16D2 - 16E9 (0x18 bytes), align: 1
+  Segment part 55.            Intra module refs:   RadioIsr_wbsl
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine1            16D2 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 13F8 - 144B (0x54 bytes), align: 1
+  Segment part 52.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           init_watch              13F8 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1664 - 1681 (0x1e bytes), align: 1
+  Segment part 51.            Intra module refs:   start_wbsl
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           reset_wbsl              1664 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 1786 - 1795 (0x10 bytes), align: 1
+  Segment part 50.            Intra module refs:   ?Subroutine0
+                                                   ?Subroutine3
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wbsl_resetTimer         1786 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 169E - 16B7 (0x1a bytes), align: 1
+  Segment part 49.            Intra module refs:   ?Subroutine0
+                                                   ?Subroutine3
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wbsl_setTimer           169E 
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 10AC - 10B3 (0x8 bytes), align: 0
+  Segment part 37.            Intra module refs:   discoveryReply
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 10B4 - 10B9 (0x6 bytes), align: 0
+  Segment part 42.            Intra module refs:   ackReply
+
+    *************************************************************************
+
+  FILE NAME : C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\LIB\DLIB\dl430xsfn.r43
+  LIBRARY MODULE, NAME : ?__dbg_break
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 17EE - 17EF (0x2 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __DebugBreak            17EE            __exit (?__exit)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 16EA - 1701 (0x18 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __exit                  16EA            Segment part 6 (?_exit)
+                                                   _exit (?_exit)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?_exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 17EA, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _exit                   17EA            exit (?exit)
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 17EA - 17ED (0x4 bytes), align: 1
+  Segment part 6.             Intra module refs:   _exit
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cstart
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTACK
+  Relative segment, address: 2A7A, align: 1
+  Segment part 1.
+    -------------------------------------------------------------------------
+DATA16_Z
+  Relative segment, address: 1D20, align: 1
+  Segment part 2.
+    -------------------------------------------------------------------------
+DATA16_I
+  Relative segment, address: 1C00, align: 1
+  Segment part 3.
+    -------------------------------------------------------------------------
+DATA16_ID
+  Relative segment, address: 10AC, align: 1
+  Segment part 4.
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 102A - 102D (0x4 bytes), align: 1
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         102A            ?reset_vector (?reset_vector)
+                                                   Absolute parts (?ABS_ENTRY_MOD)
+                                                   BSL_Entry_JMP (RFBSL_Low_Level_Init)
+           ?cstart_begin           102A 
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 102E - 1039 (0xc bytes), align: 1
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_zero       102E            AP_address (wbsl)
+                                                   RxBuffer (wbsl)
+                                                   RxBufferLength (wbsl)
+                                                   currentPacket (wbsl)
+                                                   initOk (wbsl)
+                                                   ptrMemory (wbsl)
+                                                   rxtx_flag (wbsl)
+                                                   sRFwbsl (wbsl)
+                                                   start_ram_bsl_address (wbsl)
+                                                   totalPackets (wbsl)
+                                                   wbslMode_flag (wbsl)
+                                                   wbsl_flag (wbsl)
+                                                   wbsl_number_of_retries (wbsl)
+                                                   wbsl_progress (wbsl)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 103A - 1049 (0x10 bytes), align: 1
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_init_copy       103A            ackReply (wbsl)
+                                                   discoveryReply (wbsl)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: 104A - 1051 (0x8 bytes), align: 1
+  Segment part 22.            Intra module refs:   Segment part 12
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstart_call_main       104A 
+           ?cstart_end             1052 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?reset_vector
+
+  SEGMENTS IN THE MODULE
+  ======================
+RESET
+  Relative segment, address: FFD8 - FFD9 (0x2 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?reset_vector           FFD8            Segment part 12 (?cstart)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 17E6 - 17E9 (0x4 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exit                    17E6            Segment part 22 (?cstart)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DivMod816u
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 1682 - 169D (0x1c bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DivMod8u               1682 
+           ?DivMod16u              1686            wbsl_receivePackets (wbsl)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memcpy
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 1740 - 1751 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memcpy                  1740            __data16_memcpy (?memzero)
+               CSTACK = 00000000 ( 00000004 )
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memset
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 1752 - 1763 (0x12 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memset                  1752            RadioIsr_wbsl (wbsl)
+               CSTACK = 00000000 ( 00000004 )
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memzero
+
+  SEGMENTS IN THE MODULE
+  ======================
+<CODE> 1 (was CODE)
+  Relative segment, address: 1764 - 1775 (0x12 bytes), align: 1
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memzero        1764            ?cstart_init_zero (?cstart)
+               CSTACK = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: 17E2 - 17E5 (0x4 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __data16_memcpy         17E2            ?cstart_init_copy (?cstart)
+               calls direct
+               CSTACK = 00000000 ( 00000004 )
+
+
+
+
+                ****************************************
+                *                                      *
+                *            MODULE SUMMARY            *
+                *                                      *
+                ****************************************
+
+Module                 CODE      DATA      CONST
+------                 ----      ----      -----
+                      (Rel)  (Rel)  (Abs)  (Rel)
+?DivMod816u              28
+?__dbg_break              2
+?__exit                  24
+?_exit                    4
+?cstart                  40
+?exit                     4
+?memcpy                  18
+?memset                  18
+?memzero                 22
+?reset_vector             2
+RFBSL_Low_Level_Init     36
+  + common                6                   16
+radio                   160             2     90
+  + shared                              2
+rf1a                    376             8
+  + shared                              2
+wbsl                  1 190    296     50     14
+N/A (command line)             256
+N/A (alignment)
+----------            -----    ---     --    ---
+Total:                1 924    552     64    104
+  + common                6                   16
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+DATA16_AN                              0102 - 0103               2   rel    0
+                                       0120 - 0121               2 
+                                       015C - 015D               2 
+                                       0160 - 0169               A 
+                                       016C - 016F               4 
+                                       0180 - 0181               2 
+                                       0202 - 0207               6 
+                                       0218 - 021D               6 
+                                       024A - 024B               2 
+                                       0340 - 0341               2 
+                                       0344 - 0345               2 
+                                       0350 - 0351               2 
+                                       0354 - 0355               2 
+                                       0F02 - 0F03               2 
+                                       0F06 - 0F07               2 
+                                       0F10 - 0F13               4 
+                                       0F20 - 0F21               2 
+                                       0F30 - 0F35               6 
+                                       0F38 - 0F39               2 
+ZAREA                                  1000 - 1005               6   com    1
+ZAREA_CODE                             1006 - 1029              24   rel    1
+CSTART                                 102A - 1051              28   rel    1
+DATA16_C                               1052 - 10AB              5A   rel    0
+DATA16_ID                              10AC - 10B9               E   rel    1
+<CODE> 1                               10BA - 17EF             736   rel    1
+BSLSIG                                 17F0 - 17FB               C   com    1
+JTAGLOCK_KEY                           17FC - 17FF               4   com    1
+DATA16_I                               1C00 - 1C0D               E   rel    1
+DATA16_Z                               1C0E - 1D27             11A   rel    1
+CSTACK                                 2A7A - 2B79             100   rel    1
+DATA16_AN                              2BE0 - 2BE1               2   rel    0
+RESET                                  FFD8 - FFD9               2   rel    1
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 1 930 bytes of CODE  memory
+   552 bytes of DATA  memory (+ 64 absolute )
+   120 bytes of CONST memory
+
+Errors: none
+Warnings: none
+

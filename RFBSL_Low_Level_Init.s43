@@ -1,0 +1,58 @@
+//**************************************************************
+// BSL SW low level functions
+//**************************************************************
+#include <cc430x613x.h>
+
+#ifndef RAM_BASED_RFBSL
+
+
+#define RET_low  R12
+#define RET_high r13
+
+EXTERN __program_start
+
+               COMMON   ZAREA
+;--------------------------------------------------------------
+               ;BSL Z-Area 
+;--------------------------------------------------------------
+BSL_Entry_JMP:JMP    __program_start             ; BSL ENTRY AREA
+              JMP    __port2_isr                 ; BSL_ACTION1 unused
+              JMP    $                           ; BSL_ACTION0 unused
+              
+              RSEG ZAREA_CODE
+             
+__port2_isr: 
+             BIT.B  #01h, P2IFG
+             JNC    isr_return
+             BIC    #LPM4,0(SP)         // Wake from sleep upon returning from the ISR
+isr_return:  MOV.B  #00h, P2IFG
+             RETI
+             
+
+BSL_REQ_APP_CALL   EQU  0x0002                  ;Return Value for BSLUNLOCK Function to Call BSL again
+BSL_Protect:     
+              CLR      RET_low                  ;lock (keep JTAGLOCK_KEY state)
+              
+              BIS     #SYSBSLPE+SYSBSLSIZE0+SYSBSLSIZE1 , &SYSBSLC ; protects BSL
+              CMP.W   #0FFFFh, &0FFFEh  // Check if device is not programmed, go to recovery procedure
+              JNZ     BCC2BSL
+              BIS.W   #BSL_REQ_APP_CALL, RET_low
+BCC2BSL       RETA
+
+              COMMON   BSLSIG
+                 DW       0xFFFF
+BslProtectVecLoc DW       BSL_Protect             ;address of function
+PBSLSigLoc       DW       03CA5h                  ;1st BSL signature
+SBSLSigLoc       DW       0C35Ah                  ;2nd BSL signature
+                 DW       0xFFFF
+BslEntryLoc      DW       BSL_Entry_JMP
+
+
+              COMMON   JTAGLOCK_KEY
+PJTAGLOCK_KEY DW       0xFFFF                  ; Primary Key Location
+SJTAGLOCK_KEY DW       0xFFFF                  ; Secondary Key Location
+                                               ; set default unlock JTAG with option to lock with writting
+                                               ; a value <> 0x0000 or 0xFFFF
+
+#endif
+END
