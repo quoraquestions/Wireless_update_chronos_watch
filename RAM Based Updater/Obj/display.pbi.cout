@@ -1,4 +1,4 @@
-"C:\Users\server\Desktop\new\Wireless Update\display.c"
+"C:\Users\server\Desktop\new\Wireless_update_chronos_watch\display.c"
 -std=c99
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dlib
@@ -235,7 +235,7 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\inc\dli
 -D__PLAIN_INT_BITFIELD_IS_SIGNED__=1
 -D__IAR_COMPILERBASE__=592899
 -D__DATE__="Mar  2 2017"
--D__TIME__="04:51:46"
+-D__TIME__="05:01:22"
 -D__STDC__=1
 -D__STDC_VERSION__=199901L
 -D__STDC_HOSTED__=1

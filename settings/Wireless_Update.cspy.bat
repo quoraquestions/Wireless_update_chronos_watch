@@ -19,6 +19,6 @@
 @REM 
 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\common\bin\cspybat" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\bin\430proc.dll" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\bin\430fet.dll"  %1 --plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\bin\430bat.dll" --backend -B "-p" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\config\CC430F6137.ddf" "--core=430Xv2" "--data_model=small" "--iv_base" "0xFF80" "--no_wrap_around" "--cpu_bug_30" "-d" "fet" "--erase_main_and_info" "--derivative" "CC430F6137" "--protocol" "spy-bi-wire" "--eem" "EMEX_SMALL_5XX" "--port" "HID0012" "--connection" "ti_usb" "--settlingtime=0" "--allow_access_to_BSL" "--msp430_dll" "msp430.dll" "--vccDefault" "3.3" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\common\bin\cspybat" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\bin\430proc.dll" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\bin\430sim.dll"  %1 --plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\bin\430bat.dll" --backend -B "-p" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.4 Evaluation\430\config\CC430F6137.ddf" "--core=430Xv2" "--data_model=small" "--iv_base" "0xFF80" "--no_wrap_around" "--cpu_bug_30" "--odd_word_check" "-d" "sim" "--derivativeSim" "CC430F6137" 
 
 
